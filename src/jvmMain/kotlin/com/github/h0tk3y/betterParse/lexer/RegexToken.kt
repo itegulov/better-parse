@@ -35,7 +35,6 @@ public actual class RegexToken : Token {
             : super(name, ignored) {
         pattern = regex.pattern
         this.regex = prependPatternWithInputStart(pattern, regex.options)
-        println(this.regex)
         matcher = this.regex.toPattern().matcher("")
     }
 
