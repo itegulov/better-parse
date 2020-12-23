@@ -27,5 +27,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "better-parse"
+rootProject.name = "better-parse-ng"
 include(":benchmarks", ":demo:demo-jvm", ":demo:demo-js", ":demo:demo-native")

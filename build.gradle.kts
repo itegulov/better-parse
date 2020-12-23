@@ -96,15 +96,11 @@ val publicationsFromThisPlatform = when {
     else -> error("Expected Windows, Mac, or Linux host")
 }
 
-tasks.withType(AbstractPublishToMaven::class).all {
-    onlyIf { publication.name in publicationsFromThisPlatform }
-}
-
 publishing.repositories.maven {
     name = "bintray"
-    val bintrayUsername = "hotkeytlt"
+    val bintrayUsername = "itegulov"
     val bintrayRepoName = "maven"
-    val bintrayPackageName = "better-parse"
+    val bintrayPackageName = "better-parse-ng"
     url = URI("https://api.bintray.com/maven/$bintrayUsername/$bintrayRepoName/$bintrayPackageName/;publish=0")
 
     credentials {

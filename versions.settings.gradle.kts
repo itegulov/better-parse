@@ -4,9 +4,9 @@ import org.gradle.api.plugins.ExtraPropertiesExtension
 import kotlin.reflect.full.memberProperties
 
 object Versions {
-    val version: String = "0.4.0"
-    val kotlinVersion: String = "1.4.10"
-    val serializationVersion: String = "1.0.0-RC2"
+    val version: String = "0.5.0-M1"
+    val kotlinVersion: String = "1.4.21"
+    val serializationVersion: String = "1.0.1"
     val benchmarkVersion: String = "0.2.0-dev-20"
 }
 
